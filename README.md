@@ -26,6 +26,14 @@ CREATE TABLE `rating_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+You can populate the posts table with a few posts that we are going to be liking and disliking. Run the following commands to populate the table:
+
+INSERT INTO `posts` (`id`, `text`) VALUES
+(1, 'This is the first post'),
+(2, 'This is the second piece of text'),
+(3, 'This is the third post'),
+(4, 'This is the fourth piece of text');
+
 
 
 
