@@ -1,0 +1,35 @@
+This system works exactly like the Like/Dislike system YouTube implements for its videos. On YouTube, the buttons are placed on videos.
+But, we will be using simple posts where users can click on their associated like and dislike buttons.  
+
+#### We will be using:
+
+==>> Ajax of JQuery to communicate with the server without reloading the page.
+==>> JQuery to select elements and write values and styles and attributes on the DOM.
+==>> PHP to do the backend logic like receiving click actions and performing the database calls
+==>> MySQL as the database
+
+For the database, create 'posts' table using the sql query below:
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `text` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+For rating_info:
+
+CREATE TABLE `rating_info` (
+  `user_id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `rating_action` varchar(30) NOT NULL,
+   CONSTRAINT UC_rating_info UNIQUE (user_id, post_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+
+
+
+
+
