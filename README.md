@@ -35,7 +35,7 @@ INSERT INTO `posts` (`id`, `text`) VALUES
 (4, 'This is the fourth piece of text');
 
 
-
+Note: Make sure that on the rating_info table, the user_id and post_id fields are UNIQUE. Which means that there cannot be two records of a particular user and a particular post on the table.
 
 
 

@@ -16,7 +16,7 @@ include('server.php');
 <body>
     
     <div class="posts-wrapper">
-        <?php foreach ($post as $post): ?>
+        <?php foreach ($posts as $post): ?>
             <div class="post">
                 <?php echo $post['text']; ?>
                 <div class="post-info">
