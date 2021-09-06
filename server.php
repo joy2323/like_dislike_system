@@ -4,7 +4,7 @@
 $db = mysqli_connect("localhost", "root", "", "like_dislike");
 
 // lets assume a user is logged in with id $user_id
-$user_id = 1;
+$user_id = 5;
 
 if (!$db) {
     die("Error connecting to the database: ". my_sqli_connect_error($db));
